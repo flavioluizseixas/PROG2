@@ -31,12 +31,11 @@ int main(int argc, char** argv) {
     
     visualizar(lista);
 
-    Dado entrada;
-    entrada.nome = "Seixas";
+    Dado ref;
+    ref.nome = "Flavio";
+    lista = remover(lista, ref);
 
-    remover(lista, entrada);
-
-    printf("\nApós a remoção:\n");
+    printf("\nApós remoção de %s:\n", ref.nome);
     visualizar(lista);
     
     return 0;

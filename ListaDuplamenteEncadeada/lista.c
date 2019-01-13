@@ -14,12 +14,10 @@ Lista *inicializar() {
 };
 
 void visualizar(Lista *item) {
-    int i = 0;
     while (item->prox != NULL) {
         Dado dado = item->dado;
-        printf("Lista -- Endereço %p -- id: %i; Nome %s\n", item, dado.id, dado.nome);
+        printf("Endereço %p, Anterior %p, Próximo %p -- id: %i; Nome %s\n", item, item->ant, item->prox, dado.id, dado.nome);
         item = item->prox;
-        i++;
     }
 }
 
@@ -29,21 +27,20 @@ void adicionar(Lista *lista, Dado dado) {
     while (item->prox != NULL) {
         item = item->prox;
     }
-    Item *novoItem = malloc(sizeof(*item));
+    Item *novoItem = malloc(sizeof(Item));
     novoItem->ant = item;
     novoItem->prox = NULL;
-    
-    printf("item adicionado em %p %s\n", item, dado.nome);
+
     item->dado = dado;
     item->prox = novoItem;
 }
 
-int remover(Lista *lista, Dado dado) {
-    Item *item = buscar(lista, dado);
+Lista *remover(Lista *lista, Dado ref) {
+    Item *item = buscar(lista, ref);
     
     if (item->prox == NULL) {
         printf("Item não encontrado para remoção\n");
-        return FALSE;
+        return NULL;
     }
 
     item->prox->ant = item->ant;
@@ -52,17 +49,17 @@ int remover(Lista *lista, Dado dado) {
         item->ant->prox = item->prox;
     }
     else {
-        *lista = *(item->prox);
+        lista = item->prox;
     }
     
     free(item);
     
-    return TRUE;
+    return lista;
 }
 
-Item *buscar(Lista *item, Dado dado) {
+Item *buscar(Lista *item, Dado ref) {
     while (item->prox != NULL) {
-        if (comparar_dado(item->dado, dado)) {
+        if (comparar_dado(item->dado, ref)) {
             return item;
         }
         else {

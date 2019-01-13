@@ -15,7 +15,7 @@ Lista *inicializar();
 void visualizar(Lista *lista);
 void adicionar(Lista *lista, Dado dado);
 Item *buscar(Lista *lista, Dado dado);
-int remover(Lista *lista, Dado dado);
+Lista *remover(Lista *lista, Dado ref);
 
 #endif
 

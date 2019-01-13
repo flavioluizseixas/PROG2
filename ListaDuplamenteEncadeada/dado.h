@@ -11,7 +11,6 @@ typedef struct {
 
 typedef enum {FALSE = 0, TRUE} boolean;
 
-void visualizar_dado(Dado dado);
 int comparar_dado(Dado dado1, Dado dado2);
 
 #endif /* DADO_H */
