@@ -16,7 +16,7 @@ void visualizar(Lista *item) {
     int i = 0;
     while (item->prox != NULL) {
         Dado dado = item->dado;
-        printf("Lista -- Endereço %p -- id: %i; Nome %s\n", item, dado.id, dado.nome);
+        printf("Endereço %p, Próximo %p -- id: %i; Nome %s\n", item, item->prox, dado.id, dado.nome);
         item = item->prox;
         i++;
     }
@@ -28,7 +28,7 @@ void adicionar(Lista *lista, Dado dado) {
     while (item->prox != NULL) {
         item = item->prox;
     }
-    Item *novoItem = malloc(sizeof(*item));
+    Item *novoItem = malloc(sizeof(Item));
     novoItem->prox = NULL;
     
     item->dado = dado;
