@@ -10,11 +10,10 @@ typedef struct item {
 
 typedef Item Lista;
 
-void inicializar(Lista *lista);
-void visualizar(Lista lista);
+Lista *inicializar();
+void visualizar(Lista *lista);
 void adicionar(Lista *lista, Dado dado);
-Item buscar(Lista lista, Dado dado);
-int remover(Lista *lista, Dado dado);
+Item *buscar(Lista *lista, Dado dado);
 
 #endif
 

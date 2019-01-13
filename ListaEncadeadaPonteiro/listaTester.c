@@ -5,9 +5,7 @@
 
 int main(int argc, char** argv) {
 
-    Lista lista;
-    inicializar(&lista);
-    printf("%p\n", &lista);
+    Lista *lista = inicializar();
     
     Dado dado;
     dado.id = 1;
@@ -15,23 +13,29 @@ int main(int argc, char** argv) {
     dado.altura = 1.82;
     dado.idade = 40;
     dado.peso = 80;
-    adicionar(&lista, dado);
+    adicionar(lista, dado);
 
     dado.id = 2;
     dado.nome = "Luiz";
     dado.altura = 1.66;
     dado.idade = 30;
     dado.peso = 20;
-    adicionar(&lista, dado);
+    adicionar(lista, dado);
+
+    dado.id = 3;
+    dado.nome = "Seixas";
+    dado.altura = 1.56;
+    dado.idade = 20;
+    dado.peso = 50;
+    adicionar(lista, dado);
 
     visualizar(lista);
 
-    Dado dado_pesquisado;
-    //dado_pesquisado.id = 2;
-    dado_pesquisado.nome = "Flavio";
+    Dado entrada;
+    entrada.nome = "Flavio";
     
-    Item item = buscar(lista, dado_pesquisado);
-    printf("Item encontrado: %i %s", item.dado.id, item.dado.nome);
+    Item *item = buscar(lista, entrada);
+    printf("Item encontrado: %i %s", item->dado.id, item->dado.nome);
     
     return 0;
 }
