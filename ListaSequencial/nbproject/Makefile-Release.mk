@@ -35,7 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/item.o \
+	${OBJECTDIR}/dado.o \
 	${OBJECTDIR}/lista.o \
 	${OBJECTDIR}/listaTester.o
 
@@ -64,10 +64,10 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/listasequencial: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/listasequencial ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/item.o: item.c 
+${OBJECTDIR}/dado.o: dado.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/item.o item.c
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/dado.o dado.c
 
 ${OBJECTDIR}/lista.o: lista.c 
 	${MKDIR} -p ${OBJECTDIR}

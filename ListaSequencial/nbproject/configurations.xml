@@ -4,13 +4,13 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Arquivos de Cabeçalho"
                    projectFiles="true">
-      <itemPath>item.h</itemPath>
+      <itemPath>dado.h</itemPath>
       <itemPath>lista.h</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Arquivos de Código-Fonte"
                    projectFiles="true">
-      <itemPath>item.c</itemPath>
+      <itemPath>dado.c</itemPath>
       <itemPath>lista.c</itemPath>
       <itemPath>listaTester.c</itemPath>
     </logicalFolder>
@@ -40,9 +40,9 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="item.c" ex="false" tool="0" flavor2="0">
+      <item path="dado.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="item.h" ex="false" tool="3" flavor2="0">
+      <item path="dado.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="lista.c" ex="false" tool="0" flavor2="0">
       </item>
@@ -71,9 +71,9 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="item.c" ex="false" tool="0" flavor2="0">
+      <item path="dado.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="item.h" ex="false" tool="3" flavor2="0">
+      <item path="dado.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="lista.c" ex="false" tool="0" flavor2="0">
       </item>
