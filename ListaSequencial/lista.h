@@ -13,10 +13,9 @@ typedef struct {
 Lista *inicializar(int numero_de_elementos);
 void visualizar(Lista *lista);
 
-void adicionar_pilha(Lista *lista, Dado dado);
-Dado remover_pilha(Lista *lista);
+void adicionar(Lista *lista, Dado dado);
 
-void adicionar_fila(Lista *lista, Dado dado);
+Dado remover_pilha(Lista *lista);
 Dado remover_fila(Lista *lista);
 
 #endif /* LISTA_H */
