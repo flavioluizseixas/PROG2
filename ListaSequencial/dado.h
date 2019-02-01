@@ -9,5 +9,4 @@ typedef struct {
     float peso;         // sizeof 4 bytes
 } Dado;
 
-#endif /* DADO_H */
-
+#endif

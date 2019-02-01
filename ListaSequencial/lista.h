@@ -10,13 +10,14 @@ typedef struct {
     int numero_de_elementos;
 } Lista;
 
-Lista *inicializar(int numero_de_elementos);
-void visualizar(Lista *lista);
+Lista *inicializar_lista(int numero_de_elementos);
+void liberar_lista(Lista *lista);
 
-void adicionar(Lista *lista, Dado dado);
+void visualizar_lista(Lista *lista);
 
+void adicionar_lista(Lista *lista, Dado dado);
 Dado remover_pilha(Lista *lista);
 Dado remover_fila(Lista *lista);
 
-#endif /* LISTA_H */
+#endif
 

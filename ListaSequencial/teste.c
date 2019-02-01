@@ -3,7 +3,7 @@
 
 #include "lista.h"
 
-int main(int argc, char** argv) {
+int main(void) {
 
     Lista *lista = inicializar(20);
     
@@ -83,4 +83,3 @@ int main(int argc, char** argv) {
 
     return 0;
 }
-

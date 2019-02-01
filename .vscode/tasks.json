@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "-Wall",
+                "-o",
+                "exec",
+                "teste.c",
+                "matriz.c",
+                "-g",
+                "-v"
+            ]
+        }
+    ]
+}
