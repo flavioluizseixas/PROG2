@@ -15,9 +15,9 @@ void liberar_lista(Lista *lista);
 
 void visualizar_lista(Lista *lista);
 
-void adicionar_lista(Lista *lista, Dado dado);
-Dado remover_pilha(Lista *lista);
-Dado remover_fila(Lista *lista);
+void adicionar_na_lista(Lista *lista, Dado dado);
+Dado remover_da_pilha(Lista *lista);
+Dado remover_da_fila(Lista *lista);
 
 #endif
 

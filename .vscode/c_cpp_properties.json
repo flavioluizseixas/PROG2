@@ -3,7 +3,8 @@
         {
             "name": "Mac",
             "includePath": [
-                "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include"
+                "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include",
+                "/Users/fseixas/Google Drive/Material/PROG2/Desenvolvimento/aula/ListaSequencial"
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
