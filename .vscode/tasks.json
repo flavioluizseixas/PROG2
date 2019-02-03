@@ -9,8 +9,7 @@
                 "-Wall",
                 "-o",
                 "exec",
-                "teste.c",
-                "matriz.c",
+                "teste2.c",
                 "-g",
                 "-v"
             ]
